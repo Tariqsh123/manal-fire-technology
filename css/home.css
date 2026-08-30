@@ -1,0 +1,359 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        /* ================= NAVBAR ================= */
+        .fire-navbar {
+            height: fit-content;
+            background: #ffffff;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+            z-index: 9999;
+        }
+
+        /* Logo */
+        .fire-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .fire-logo img {
+            width: auto;
+            height: 70px;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .fire-logo:hover img {
+            transform: scale(1.03);
+        }
+
+        /* Nav Links */
+        .fire-navbar .nav-link {
+            color: #1e293b;
+            font-size: 14.5px;
+            font-weight: 600;
+            padding: 28px 18px !important;
+            letter-spacing: 0.2px;
+            transition: color 0.25s ease;
+        }
+
+        .fire-navbar .nav-link:hover,
+        .fire-navbar .nav-link.active {
+            color: #9d010a;
+        }
+
+        .fire-navbar .dropdown-toggle::after {
+            margin-left: 5px;
+            vertical-align: 2px;
+            font-size: 11px;
+        }
+
+        /* ================= DROPDOWN ================= */
+        .fire-dropdown {
+            min-width: 250px;
+            padding: 8px 0;
+            margin-top: 0 !important;
+            border: none !important;
+            border-radius: 12px;
+            background: #ffffff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        .fire-dropdown .dropdown-item {
+            color: #1e293b;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 11px 22px;
+            transition: all 0.22s ease;
+            border-left: 3px solid transparent;
+        }
+
+        .fire-dropdown .dropdown-item:hover {
+            color: #9d010a;
+            background: transparent !important;
+            border-left: 3px solid #9d010a;
+            padding-left: 26px;
+        }
+
+        .products-dropdown {
+            min-width: 260px;
+        }
+
+        /* ================= CONTACT BUTTON ================= */
+        .nav-contact {
+            display: inline-flex;
+            align-items: center;
+            color: #ffffff !important;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 11px 22px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #9d010a, #e30613);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .nav-contact:hover {
+            color: #ffffff !important;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* ================= HOVER DROPDOWN (Desktop) ================= */
+        @media (min-width: 992px) {
+            .navbar-nav .dropdown:hover>.dropdown-menu {
+                display: block;
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+
+            .navbar-nav .dropdown-menu {
+                display: block;
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(10px);
+                transition: all 0.22s ease;
+            }
+        }
+
+        /* ================= MOBILE ================= */
+        .fire-navbar .navbar-toggler {
+            border: none;
+            padding: 6px;
+            box-shadow: none !important;
+        }
+
+        .fire-navbar .navbar-toggler:focus {
+            box-shadow: none !important;
+        }
+
+        .fire-navbar .navbar-toggler-icon {
+            width: 24px;
+            height: 24px;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(30, 41, 59, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        @media (max-width: 991.98px) {
+            .fire-navbar {
+                height: auto;
+                min-height: 72px;
+                padding: 8px 0;
+            }
+
+            .fire-logo img {
+                max-width: 165px;
+                max-height: 48px;
+            }
+
+            .fire-navbar .navbar-collapse {
+                background: #ffffff;
+                padding: 10px 0 20px;
+                margin-top: 8px;
+            }
+
+            .fire-navbar .nav-link {
+                padding: 13px 16px !important;
+                font-size: 15px;
+                border-bottom: 1px solid #f1f5f9;
+            }
+
+            .fire-navbar .nav-item:last-child .nav-link {
+                border-bottom: none;
+            }
+
+            .fire-dropdown {
+                margin: 0 12px 10px !important;
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+                border-radius: 10px;
+            }
+
+            .fire-dropdown .dropdown-item {
+                padding: 12px 18px;
+                font-size: 14.5px;
+            }
+
+            .fire-dropdown .dropdown-item:hover {
+                padding-left: 22px;
+            }
+
+            .nav-contact {
+                display: flex;
+                justify-content: center;
+                margin: 16px 16px 6px;
+                padding: 13px;
+                font-size: 15px;
+            }
+        }
+
+
+/* ================= HERO SECTION ================= */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    margin-top: 82px;
+}
+
+.hero-slider {
+    height: fit-content;
+}
+
+.hero-slide {
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Light Black Overlay */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.58);
+    z-index: 1;
+}
+
+/* Content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 950px;
+    padding: 0 24px;
+    color: #ffffff;
+}
+
+/* Title */
+.hero-content h1 {
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    color: #ffffff;
+    letter-spacing: -1px;
+    text-shadow: 0 6px 25px rgba(0, 0, 0, 0.45);
+}
+
+/* Description */
+.hero-content p {
+    font-size: 19px;
+    line-height: 1.75;
+    margin-bottom: 40px;
+    color: #ffffff;
+    opacity: 0.92;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+}
+
+/* Button - Pure Red Gradient */
+.hero-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #9d010a, #e30613);
+    color: #ffffff !important;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 35px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.35s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    letter-spacing: 0.3px;
+}
+
+.hero-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    color: #ffffff !important;
+}
+
+/* Slick Dots */
+.hero-section .slick-dots {
+    bottom: 25px;
+}
+
+.hero-section .slick-dots li button:before {
+    font-size: 11px;
+    color: #ffffff;
+    opacity: 0.45;
+}
+
+.hero-section .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #ffffff;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1199px) {
+    .hero-content h1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero-slide {
+        padding: 90px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-content p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 767px) {
+    
+    .hero-slide {
+        height: 90vh;
+        padding: 80px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 50px;
+        margin-bottom: 18px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .hero-btn {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-slide {
+    }
+
+    .hero-content h1 {
+        font-size: 50px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+}
