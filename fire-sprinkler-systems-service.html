@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>Fire Sprinkler System Service | Manal Fire Technology</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/service.css">
+
+    <!-- No internal CSS added – relies on service.css -->
+</head>
+<body>
+
+    <!-- ============================================================
+    NAVBAR (unchanged)
+    ============================================================ -->
+    <nav class="navbar navbar-expand-lg fixed-top fire-navbar" id="mainNav">
+        <div class="container-fluid px-lg-5">
+            <a class="navbar-brand fire-logo" href="#">
+                <img src="images/logo-nav.png" alt="Manal Fire Technology" />
+            </a>
+            <div class="collapse navbar-collapse d-none d-lg-flex" id="fireNavbarDesktop">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Services</a>
+                        <ul class="dropdown-menu fire-dropdown">
+                            <li><a class="dropdown-item" href="#services">Fire Pumps</a></li>
+                            <li><a class="dropdown-item" href="#services">Fire Hydrant Systems</a></li>
+                            <li><a class="dropdown-item" href="#services">Gaseous Fire Suppression</a></li>
+                            <li><a class="dropdown-item" href="#services">Fire Sprinkler Systems</a></li>
+                            <li><a class="dropdown-item" href="#services">Fire Extinguisher</a></li>
+                            <li><a class="dropdown-item" href="#services">Security Surveillance</a></li>
+                            <li><a class="dropdown-item" href="#services">Fire Alarm &amp; Detection</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#clients">Clients</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                        <ul class="dropdown-menu fire-dropdown products-dropdown">
+                            <li><a class="dropdown-item" href="#products">Fire Hydrant</a></li>
+                            <li><a class="dropdown-item" href="#products">Fire Hose Reel</a></li>
+                            <li><a class="dropdown-item" href="#products">Fire Door</a></li>
+                            <li><a class="dropdown-item" href="#products">Fire Detection System</a></li>
+                            <li><a class="dropdown-item" href="#products">Exit Sign</a></li>
+                            <li><a class="dropdown-item" href="#products">Emergency Light</a></li>
+                            <li><a class="dropdown-item" href="#products">Fire Safety Signage</a></li>
+                            <li><a class="dropdown-item" href="#products">CCTV Camera Installation</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="nav-contact" href="#contact"><i class="fas fa-phone-alt"></i> Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger-icon" id="hamburgerIcon">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============================================================
+    OFF-CANVAS SIDE MENU
+    ============================================================ -->
+    <div class="offcanvas offcanvas-end offcanvas-fire" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavLabel">Menu</h5>
+            <button type="button" class="btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="#home" data-bs-dismiss="offcanvas">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Our Services <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu fire-dropdown">
+                        <li><a class="dropdown-item" href="#services" data-bs-dismiss="offcanvas">Fire Pumps</a></li>
+                        <li><a class="dropdown-item" href="#services" data-bs-dismiss="offcanvas">Fire Hydrant Systems</a></li>
+                        <li><a class="dropdown-item" href="#services" data-bs-dismiss="offcanvas">Gaseous Fire Suppression</a></li>
+                        <li><a class="dropdown-item" href="#services" data-bs-dismiss="offcanvas">Fire Sprinkler Systems</a></li>
+                        <li><a class="dropdown-item" href="#services" data-bs-dismiss="offcanvas">Fire Extinguisher</a></li>
+                        <li><a class="dropdown-item" href="#services" data-bs-dismiss="offcanvas">Security Surveillance</a></li>
+                        <li><a class="dropdown-item" href="#services" data-bs-dismiss="offcanvas">Fire Alarm &amp; Detection</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#clients" data-bs-dismiss="offcanvas">Clients</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Products <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu fire-dropdown products-dropdown">
+                        <li><a class="dropdown-item" href="#products" data-bs-dismiss="offcanvas">Fire Hydrant</a></li>
+                        <li><a class="dropdown-item" href="#products" data-bs-dismiss="offcanvas">Fire Hose Reel</a></li>
+                        <li><a class="dropdown-item" href="#products" data-bs-dismiss="offcanvas">Fire Door</a></li>
+                        <li><a class="dropdown-item" href="#products" data-bs-dismiss="offcanvas">Fire Detection System</a></li>
+                        <li><a class="dropdown-item" href="#products" data-bs-dismiss="offcanvas">Exit Sign</a></li>
+                        <li><a class="dropdown-item" href="#products" data-bs-dismiss="offcanvas">Emergency Light</a></li>
+                        <li><a class="dropdown-item" href="#products" data-bs-dismiss="offcanvas">Fire Safety Signage</a></li>
+                        <li><a class="dropdown-item" href="#products" data-bs-dismiss="offcanvas">CCTV Camera Installation</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#about" data-bs-dismiss="offcanvas">About Us</a></li>
+                <a class="nav-contact-mobile" href="#contact" data-bs-dismiss="offcanvas">
+                    <i class="fas fa-phone-alt"></i> Contact Us
+                </a>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    WHATSAPP FLOATING BUTTON
+    ============================================================ -->
+    <a href="https://wa.me/923272386765" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+
+    <!-- ============================================================
+    HERO – updated for Fire Sprinkler Systems
+    ============================================================ -->
+    <section id="service-pag-hero" class="service-pag-hero">
+        <div class="service-pag-hero-content">
+            <h1>Fire Sprinkler <br />Systems</h1>
+            <p>
+                Reliable and dependable automatic fire protection – sprinklers are individually activated by heat,
+                controlling fires with minimal water, protecting lives and property.
+            </p>
+        </div>
+    </section>
+
+    <!-- STATS BAR (unchanged) -->
+    <div class="service-pag-stats-section">
+        <div class="service-pag-stat">
+            <span class="service-pag-num">20+</span> Years Expertise
+        </div>
+        <div class="service-pag-stat">
+            <span class="service-pag-num">100%</span> NFPA Compliance
+        </div>
+        <div class="service-pag-stat">
+            <span class="service-pag-num">24/7</span> Emergency Support
+        </div>
+    </div>
+
+    <!-- ============================================================
+    MAIN CONTENT – Fire Sprinkler Systems text
+    ============================================================ -->
+    <main class="service-pag-container" style="margin-top: 30px;">
+
+        <!-- image row 1 (keep) -->
+        <div class="service-pag-image-row">
+            <div class="service-pag-img-placeholder">
+                <img src="images/Fire-Alarm.png" alt="Fire Sprinkler System" />
+            </div>
+            <div class="service-pag-img-placeholder">
+                <img src="images/Fire-Protection-Systems.png" alt="Fire Protection Systems" />
+            </div>
+            <div class="service-pag-img-placeholder">
+                <img src="images/fire-safety.png" alt="Fire Safety Equipment" />
+            </div>
+        </div>
+
+        <!-- Text content – provided by user -->
+        <div class="service-pag-content-text">
+            <h2><span> Fire Sprinkler</span> Systems</h2>
+            <p>
+                Sprinklers are simple devices that are individually operated by the heat from a fire. When a fire starts, 
+                hot gases rise to the ceiling. If a sprinkler is present, a glass bulb or solder link gets hot and at a 
+                specific temperature (typically 68°C), it breaks, releasing a cap and allowing water to flow onto a diffuser. 
+                The diffuser breaks up the water flow into carefully controlled droplets which penetrate the fire plume and 
+                cool the burning material to below its ignition point, thus controlling the fire. Only the sprinkler(s) 
+                directly over the fire are operated.
+            </p>
+            <p>
+                The sprinklers are connected to pipe work, usually filled with water, which is supplied either from the water 
+                mains or from a storage tank via a pump. When a sprinkler operates, the flow of water in the pipe work operates 
+                a flow switch, which, in turn operates an alarm system. The flow of water is small, usually less than 1/100th 
+                of the water used by the Fire and Rescue Service.
+            </p>
+            <p>
+                <strong>Reliable and dependable</strong><br />
+                Sprinklers do not go off accidentally and are only triggered by real fires. They are also very reliable and 
+                only 1 sprinkler in 16,000,000 exhibits any form of manufacturing defect.
+            </p>
+
+            <h3> AUTOMATIC <span>WATER SPRINKLER </span>SYSTEM</h3>
+            <p>
+                One of the oldest &amp; traditional ways of fire protection, which is water based protection system, is in the 
+                form of automatic sprinklers. FirePro can provide you with complete designing of sprinkler system for any kind 
+                of hazard. Our design facility also has the provision for calculation of water demand using latest licensed 
+                hydraulic calculation software’s which will accurately determine the water demand as per the standards. 
+                Various sprinkler system network designing can be done to cater the specific needs of the customers varying 
+                from residential to commercial and industrial.
+            </p>
+        </div>
+
+        <!-- closing note -->
+        <div style="padding: 30px 0 50px; border-top: 1px solid #eef2f6; margin-top: 20px; text-align: center;">
+            <p style="color: #475569; font-size: 0.95rem; max-width: 640px; margin: 0 auto;">
+                <strong>Manal Fire Technology</strong> – your trusted partner for reliable fire sprinkler systems 
+                and comprehensive fire protection solutions.
+            </p>
+        </div>
+
+    </main>
+
+    <!-- ============================================================
+    FOOTER (unchanged)
+    ============================================================ -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="footer-logo">
+                        <img src="images/logo-nav.png" alt="Manal Fire Technology" />
+                    </div>
+                    <p style="font-size:0.92rem;line-height:1.8;max-width:340px;">
+                        A Single Comprehensive Fire Fighting Solution with well-integrated Safety &amp; Security System in Place.
+                    </p>
+                    <div class="footer-contact">
+                        <p style="margin-bottom:6px;"><i class="fas fa-map-marker-alt"></i> Office no-05, RJ Mall, Gulshan-e-Iqbal Karachi</p>
+                        <p style="margin-bottom:6px;"><i class="fas fa-phone-alt"></i> 0327-2386765</p>
+                        <p style="margin-bottom:6px;"><i class="fas fa-envelope"></i> info@fireprosafetysolutions.com</p>
+                        <p style="margin-bottom:0;"><i class="fas fa-globe"></i> www.fireprosafetysolutions.com</p>
+                    </div>
+                    <div style="display:flex;gap:12px;margin-top:16px;justify-content:center;">
+                        <a href="#" style="color:rgba(255,255,255,0.5);font-size:1.2rem;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" style="color:rgba(255,255,255,0.5);font-size:1.2rem;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color:rgba(255,255,255,0.5);font-size:1.2rem;"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" style="color:rgba(255,255,255,0.5);font-size:1.2rem;"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Services</h5>
+                    <a href="#services">Fire Pumps</a><br />
+                    <a href="#services">Fire Hydrant Systems</a><br />
+                    <a href="#services">Fire Suppression</a><br />
+                    <a href="#services">Sprinkler Systems</a><br />
+                    <a href="#services">Fire Extinguisher</a>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Products</h5>
+                    <a href="#products">Fire Hydrant</a><br />
+                    <a href="#products">Fire Hose Reel</a><br />
+                    <a href="#products">Fire Door</a><br />
+                    <a href="#products">Detection System</a><br />
+                    <a href="#products">Exit Sign</a>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5>Send a Message</h5>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required />
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required />
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Manal Fire Technology. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    BACK TO TOP
+    ============================================================ -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ============================================================
+    SCRIPTS (unchanged)
+    ============================================================ -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $(window).trigger('scroll');
+
+            // BACK TO TOP
+            var backBtn = $('#backToTop');
+            $(window).on('scroll', function() {
+                if ($(window).scrollTop() > 400) {
+                    backBtn.addClass('show');
+                } else {
+                    backBtn.removeClass('show');
+                }
+            });
+            backBtn.on('click', function() {
+                $('html, body').animate({ scrollTop: 0 }, 500);
+            });
+
+            // NAVBAR SCROLL
+            var navbar = $('#mainNav');
+            $(window).on('scroll', function() {
+                if ($(window).scrollTop() > 80) {
+                    navbar.addClass('scrolled');
+                } else {
+                    navbar.removeClass('scrolled');
+                }
+            });
+
+            // SMOOTH NAV LINKS
+            $('a[href^="#"]').on('click', function(e) {
+                var target = $(this.getAttribute('href'));
+                if (target.length) {
+                    e.preventDefault();
+                    var navHeight = $('.fire-navbar').outerHeight() || 80;
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - navHeight - 10
+                    }, 600);
+                }
+            });
+
+            // OFF-CANVAS: sync hamburger icon
+            var offcanvasEl = document.getElementById('offcanvasNav');
+            var hamburgerIcon = document.getElementById('hamburgerIcon');
+
+            offcanvasEl.addEventListener('show.bs.offcanvas', function() {
+                hamburgerIcon.classList.add('open');
+            });
+            offcanvasEl.addEventListener('hide.bs.offcanvas', function() {
+                hamburgerIcon.classList.remove('open');
+            });
+
+            // OFF-CANVAS: close dropdowns when a dropdown item is clicked
+            $('.offcanvas-fire .dropdown-item').on('click', function() {
+                var offcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+                if (offcanvas) {
+                    offcanvas.hide();
+                }
+            });
+
+        });
+    </script>
+
+</body>
+</html>

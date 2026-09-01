@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>Fire Pump Service | Manal Fire Technology</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/service.css">
+</head>
+<body>
+
+    <!-- ============================================================
+    NAVBAR
+    ============================================================ -->
+    <nav class="navbar navbar-expand-lg fixed-top fire-navbar" id="mainNav">
+        <div class="container-fluid px-lg-5">
+            <!-- Logo -->
+            <a class="navbar-brand fire-logo" href="#">
+                <img src="images/logo-nav.png" alt="Manal Fire Technology" />
+            </a>
+
+            <!-- Desktop nav -->
+            <div class="collapse navbar-collapse d-none d-lg-flex" id="fireNavbarDesktop">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Services</a>
+                        <ul class="dropdown-menu fire-dropdown">
+                            <li><a class="dropdown-item" href="#services">Fire Pumps</a></li>
+                            <li><a class="dropdown-item" href="#services">Fire Hydrant Systems</a></li>
+                            <li><a class="dropdown-item" href="#services">Gaseous Fire Suppression</a></li>
+                            <li><a class="dropdown-item" href="#services">Fire Sprinkler Systems</a></li>
+                            <li><a class="dropdown-item" href="#services">Fire Extinguisher</a></li>
+                            <li><a class="dropdown-item" href="#services">Security Surveillance</a></li>
+                            <li><a class="dropdown-item" href="#services">Fire Alarm &amp; Detection</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#clients">Clients</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                        <ul class="dropdown-menu fire-dropdown products-dropdown">
+                            <li><a class="dropdown-item" href="#products">Fire Hydrant</a></li>
+                            <li><a class="dropdown-item" href="#products">Fire Hose Reel</a></li>
+                            <li><a class="dropdown-item" href="#products">Fire Door</a></li>
+                            <li><a class="dropdown-item" href="#products">Fire Detection System</a></li>
+                            <li><a class="dropdown-item" href="#products">Exit Sign</a></li>
+                            <li><a class="dropdown-item" href="#products">Emergency Light</a></li>
+                            <li><a class="dropdown-item" href="#products">Fire Safety Signage</a></li>
+                            <li><a class="dropdown-item" href="#products">CCTV Camera Installation</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="nav-contact" href="#contact"><i class="fas fa-phone-alt"></i> Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Mobile: offcanvas toggler -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger-icon" id="hamburgerIcon">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============================================================
+    OFF-CANVAS SIDE MENU — z-index 99999999 + custom cross button
+    ============================================================ -->
+    <div class="offcanvas offcanvas-end offcanvas-fire" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavLabel">Menu</h5>
+            <!-- Custom cross/close button — big & visible -->
+            <button type="button" class="btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="#home" data-bs-dismiss="offcanvas">Home</a></li>
+
+                <!-- Services Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Our Services <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu fire-dropdown">
+                        <li><a class="dropdown-item" href="#services" data-bs-dismiss="offcanvas">Fire Pumps</a></li>
+                        <li><a class="dropdown-item" href="#services" data-bs-dismiss="offcanvas">Fire Hydrant Systems</a></li>
+                        <li><a class="dropdown-item" href="#services" data-bs-dismiss="offcanvas">Gaseous Fire Suppression</a></li>
+                        <li><a class="dropdown-item" href="#services" data-bs-dismiss="offcanvas">Fire Sprinkler Systems</a></li>
+                        <li><a class="dropdown-item" href="#services" data-bs-dismiss="offcanvas">Fire Extinguisher</a></li>
+                        <li><a class="dropdown-item" href="#services" data-bs-dismiss="offcanvas">Security Surveillance</a></li>
+                        <li><a class="dropdown-item" href="#services" data-bs-dismiss="offcanvas">Fire Alarm &amp; Detection</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="#clients" data-bs-dismiss="offcanvas">Clients</a></li>
+
+                <!-- Products Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Products <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu fire-dropdown products-dropdown">
+                        <li><a class="dropdown-item" href="#products" data-bs-dismiss="offcanvas">Fire Hydrant</a></li>
+                        <li><a class="dropdown-item" href="#products" data-bs-dismiss="offcanvas">Fire Hose Reel</a></li>
+                        <li><a class="dropdown-item" href="#products" data-bs-dismiss="offcanvas">Fire Door</a></li>
+                        <li><a class="dropdown-item" href="#products" data-bs-dismiss="offcanvas">Fire Detection System</a></li>
+                        <li><a class="dropdown-item" href="#products" data-bs-dismiss="offcanvas">Exit Sign</a></li>
+                        <li><a class="dropdown-item" href="#products" data-bs-dismiss="offcanvas">Emergency Light</a></li>
+                        <li><a class="dropdown-item" href="#products" data-bs-dismiss="offcanvas">Fire Safety Signage</a></li>
+                        <li><a class="dropdown-item" href="#products" data-bs-dismiss="offcanvas">CCTV Camera Installation</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="#about" data-bs-dismiss="offcanvas">About Us</a></li>
+
+                <!-- Contact button inside offcanvas -->
+                <a class="nav-contact-mobile" href="#contact" data-bs-dismiss="offcanvas">
+                    <i class="fas fa-phone-alt"></i> Contact Us
+                </a>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    WHATSAPP FLOATING BUTTON
+    ============================================================ -->
+    <a href="https://wa.me/923272386765" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+
+    <!-- ============================================================
+    HERO
+    ============================================================ -->
+
+    
+ <!-- ═══ HERO ═══ -->
+    <section id="service-pag-hero" class="service-pag-hero">
+        <div class="service-pag-hero-content">
+            <h1>Fire Pump <br />Installation &amp; Retrofitting</h1>
+            <p>
+                The fire pump is the heart of your sprinkler system. From
+                initial water flow analysis to diesel service, our certified
+                technicians ensure your pump delivers the pressure you need
+                when it matters most.
+            </p>
+        </div>
+    </section>
+
+    <!-- ═══ STATS BAR ═══ -->
+    <div class="service-pag-stats-section">
+        <div class="service-pag-stat">
+            <span class="service-pag-num">20+</span> Years Expertise
+        </div>
+        <div class="service-pag-stat">
+            <span class="service-pag-num">100%</span> NFPA Compliance
+        </div>
+        <div class="service-pag-stat">
+            <span class="service-pag-num">24/7</span> Emergency Support
+        </div>
+    </div>
+
+    <!-- ═══ MAIN CONTENT ═══ -->
+    <main id="service-pag-main" class="service-pag-container">
+
+        <!-- ── image row 1 ── -->
+        <div class="service-pag-image-row">
+            <div class="service-pag-img-placeholder">
+                <img src="images/Fire-Alarm.png" alt="Fire Alarm System" />
+            </div>
+            <div class="service-pag-img-placeholder">
+                <img src="images/Fire-Protection-Systems.png" alt="Fire Protection Systems" />
+            </div>
+            <div class="service-pag-img-placeholder">
+                <img src="images/fire-safety.png" alt="Fire Safety Equipment" />
+            </div>
+        </div>
+
+        <!-- ── section title ── -->
+        <div class="service-pag-section-title">
+            <h2>Our <span>Fire Pump</span> Services</h2>
+            <p>Comprehensive solutions from flow analysis to emergency repair — all backed by NFPA standards.</p>
+        </div>
+
+        <!-- ── grid cards ── -->
+        <div class="service-pag-grid-2">
+
+            <div class="service-pag-card">
+                <div class="service-pag-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>Initial <span>Water Flow</span> Analysis</h3>
+                <p>We analyze municipal water pressure and site-specific demands to custom-engineer the right pump for your building.</p>
+                <ul>
+                    <li>Site pressure &amp; flow testing</li>
+                    <li>Hydraulic design verification</li>
+                    <li>NFPA 20 compliant sizing</li>
+                </ul>
+            </div>
+
+            <div class="service-pag-card">
+                <div class="service-pag-icon"><i class="fas fa-tools"></i></div>
+                <h3>New Pump <span>Installation</span></h3>
+                <p>From horizontal split case to vertical turbine, we install electric and diesel-driven pumps with precision.</p>
+                <ul>
+                    <li>Turnkey installation &amp; commissioning</li>
+                    <li>Controller &amp; transfer switch setup</li>
+                    <li>Permit &amp; submittal packages</li>
+                </ul>
+            </div>
+
+            <div class="service-pag-card">
+                <div class="service-pag-icon"><i class="fas fa-sync-alt"></i></div>
+                <h3><span>Retrofitting</span> &amp; Upgrades</h3>
+                <p>Modernize your existing fire pump system to meet current codes and improve reliability.</p>
+                <ul>
+                    <li>Controller &amp; pressure switch upgrades</li>
+                    <li>Motor &amp; diesel engine retrofits</li>
+                    <li>Flow test &amp; performance validation</li>
+                </ul>
+            </div>
+
+            <div class="service-pag-card">
+                <div class="service-pag-icon"><i class="fas fa-water"></i></div>
+                <h3>Jockey Pump <span>Services</span></h3>
+                <p>We service the small pump that maintains system pressure and ensures your main fire pump starts reliably.</p>
+                <ul>
+                    <li>Jockey pump installation &amp; repair</li>
+                    <li>Pressure switch calibration</li>
+                    <li>Parallel system integration</li>
+                </ul>
+            </div>
+
+            <div class="service-pag-card">
+                <div class="service-pag-icon"><i class="fas fa-tachometer-alt"></i></div>
+                <h3>Annual <span>Flow Tests</span></h3>
+                <p>NFPA 25 requires annual flow testing. Our certified inspectors deliver detailed reports with actionable insights.</p>
+                <ul>
+                    <li>Full flow &amp; churn tests</li>
+                    <li>Pressure &amp; flow data logging</li>
+                    <li>Comprehensive inspection reports</li>
+                </ul>
+            </div>
+
+            <div class="service-pag-card">
+                <div class="service-pag-icon"><i class="fas fa-oil-can"></i></div>
+                <h3>Diesel <span>Engine Service</span></h3>
+                <p>Annual and semiannual diesel pump maintenance to ensure your engine starts every time.</p>
+                <ul>
+                    <li>Fuel system &amp; battery inspection</li>
+                    <li>Coolant &amp; exhaust checks</li>
+                    <li>Load bank testing</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- ── image row 2 ── -->
+        <div class="service-pag-image-row" style="margin-top: 40px;">
+            <div class="service-pag-img-placeholder">
+                <img src="images/Fire-Alarm.png" alt="Diesel engine fire pump" />
+            </div>
+            <div class="service-pag-img-placeholder">
+                <img src="images/Fire-Protection-Systems.png" alt="Fire pump design and shop drawings" />
+            </div>
+            <div class="service-pag-img-placeholder">
+                <img src="images/fire-safety.png" alt="Fire pump controller and transfer switch" />
+            </div>
+        </div>
+
+        <!-- ── FEATURE BLOCK: Maintenance (redesigned) ── -->
+        <div class="service-pag-feature-block">
+            <div class="service-pag-feature-grid">
+                <div class="service-pag-feature-content">
+                    <h3>Fire Pump Maintenance &amp; Inspections</h3>
+                    <p>
+                        Without proper maintenance, a fire pump may not deliver the pressure your building requires.
+                        At <strong>FirePro</strong>, our certified inspectors comply with <strong>NFPA 25</strong>,
+                        <strong>NFPA 72</strong>, and Pakistan building codes. We provide detailed inspection reports
+                        and complete trouble-shooting for pressure switches, gauges, motor repairs, jockey pumps,
+                        and fire pump controllers. We also repack and rebuild pumps — all in compliance with
+                        <strong>NFPA 20</strong>, county, and city requirements.
+                    </p>
+                    <div class="service-pag-tags">
+                        <span>NFPA 25 Inspections</span>
+                        <span>NFPA 72 Compliance</span>
+                        <span>Pakistan Building Code</span>
+                        <span>24/7 Emergency Service</span>
+                    </div>
+                </div>
+                <div class="service-pag-feature-image">
+                    <img src="images/Fire-Protection-Systems.png" alt="Fire pump maintenance" />
+                </div>
+            </div>
+        </div>
+
+        <!-- ── image row 3 ── -->
+        <div class="service-pag-image-row" style="margin-top: 10px;">
+            <div class="service-pag-img-placeholder">
+                <img src="images/fire-safety.png" alt="Motor repair and rebuild" />
+            </div>
+            <div class="service-pag-img-placeholder">
+                <img src="images/Fire-Alarm.png" alt="Detailed inspection reports" />
+            </div>
+            <div class="service-pag-img-placeholder">
+                <img src="images/Fire-Protection-Systems.png" alt="Emergency fire pump service" />
+            </div>
+        </div>
+
+        <!-- ── FEATURE BLOCK: Emergency (redesigned, reverse layout) ── -->
+        <div class="service-pag-feature-block reverse">
+            <div class="service-pag-feature-grid">
+                <div class="service-pag-feature-content">
+                    <h3>24/7 Emergency Fire Pump Service</h3>
+                    <p>
+                        <strong>365 days a year</strong>, our fire sprinkler technicians are equipped and ready to
+                        service your fire pump. From alarm conditions to complete pump failure, we respond fast
+                        to keep your system operational. All repairs comply with <strong>NFPA 20</strong>,
+                        <strong>NFPA 70</strong>, and local requirements.
+                    </p>
+                    <div class="service-pag-tags">
+                        <span>24/7 Dispatch</span>
+                        <span>On-site Repairs</span>
+                        <span>Electric &amp; Diesel</span>
+                        <span>Full Troubleshooting</span>
+                    </div>
+                </div>
+                <div class="service-pag-feature-image">
+                    <img src="images/fire-safety.png" alt="Emergency fire pump service" />
+                </div>
+            </div>
+        </div>
+
+        <!-- ── closing note ── -->
+        <div class="service-pag-closing">
+            <p>
+                <strong>FirePro</strong> – total commitment to quality for your fire pump and sprinkler system.
+            </p>
+        </div>
+
+    </main>
+    
+
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="footer-logo">
+                        <img src="images/logo-nav.png" alt="Manal Fire Technology" />
+                    </div>
+                    <p style="font-size:0.92rem;line-height:1.8;max-width:340px;">
+                        A Single Comprehensive Fire Fighting Solution with well-integrated Safety &amp; Security System in Place.
+                    </p>
+                    <div class="footer-contact">
+                        <p style="margin-bottom:6px;"><i class="fas fa-map-marker-alt"></i> Office no-05, RJ Mall, Gulshan-e-Iqbal Karachi</p>
+                        <p style="margin-bottom:6px;"><i class="fas fa-phone-alt"></i> 0327-2386765</p>
+                        <p style="margin-bottom:6px;"><i class="fas fa-envelope"></i> info@fireprosafetysolutions.com</p>
+                        <p style="margin-bottom:0;"><i class="fas fa-globe"></i> www.fireprosafetysolutions.com</p>
+                    </div>
+                    <div style="display:flex;gap:12px;margin-top:16px;justify-content:center;">
+                        <a href="#" style="color:rgba(255,255,255,0.5);font-size:1.2rem;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" style="color:rgba(255,255,255,0.5);font-size:1.2rem;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color:rgba(255,255,255,0.5);font-size:1.2rem;"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" style="color:rgba(255,255,255,0.5);font-size:1.2rem;"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Services</h5>
+                    <a href="#services">Fire Pumps</a><br />
+                    <a href="#services">Fire Hydrant Systems</a><br />
+                    <a href="#services">Fire Suppression</a><br />
+                    <a href="#services">Sprinkler Systems</a><br />
+                    <a href="#services">Fire Extinguisher</a>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Products</h5>
+                    <a href="#products">Fire Hydrant</a><br />
+                    <a href="#products">Fire Hose Reel</a><br />
+                    <a href="#products">Fire Door</a><br />
+                    <a href="#products">Detection System</a><br />
+                    <a href="#products">Exit Sign</a>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5>Send a Message</h5>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required />
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required />
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Manal Fire Technology. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    BACK TO TOP
+    ============================================================ -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ============================================================
+    SCRIPTS
+    ============================================================ -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+    </script>
+
+    <script>
+        $(document).ready(function() {
+
+            
+
+            $(window).trigger('scroll');
+
+            // ===== BACK TO TOP =====
+            var backBtn = $('#backToTop');
+            $(window).on('scroll', function() {
+                if ($(window).scrollTop() > 400) {
+                    backBtn.addClass('show');
+                } else {
+                    backBtn.removeClass('show');
+                }
+            });
+            backBtn.on('click', function() {
+                $('html, body').animate({ scrollTop: 0 }, 500);
+            });
+
+            // ===== NAVBAR SCROLL =====
+            var navbar = $('#mainNav');
+            $(window).on('scroll', function() {
+                if ($(window).scrollTop() > 80) {
+                    navbar.addClass('scrolled');
+                } else {
+                    navbar.removeClass('scrolled');
+                }
+            });
+
+            // ===== SMOOTH NAV LINKS =====
+            $('a[href^="#"]').on('click', function(e) {
+                var target = $(this.getAttribute('href'));
+                if (target.length) {
+                    e.preventDefault();
+                    var navHeight = $('.fire-navbar').outerHeight() || 80;
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - navHeight - 10
+                    }, 600);
+                }
+            });
+
+            // ===== OFF-CANVAS: sync hamburger icon =====
+            var offcanvasEl = document.getElementById('offcanvasNav');
+            var hamburgerIcon = document.getElementById('hamburgerIcon');
+
+            offcanvasEl.addEventListener('show.bs.offcanvas', function() {
+                hamburgerIcon.classList.add('open');
+            });
+            offcanvasEl.addEventListener('hide.bs.offcanvas', function() {
+                hamburgerIcon.classList.remove('open');
+            });
+
+            // ===== OFF-CANVAS: close dropdowns when a dropdown item is clicked =====
+            $('.offcanvas-fire .dropdown-item').on('click', function() {
+                var offcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+                if (offcanvas) {
+                    offcanvas.hide();
+                }
+            });
+
+        });
+    </script>
+
+</body>
+</html>

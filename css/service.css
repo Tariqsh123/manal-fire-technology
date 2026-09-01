@@ -1,0 +1,439 @@
+        /* ── hero ── */
+        .service-pag-hero {
+            background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
+            padding: 150px 20px 70px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-pag-hero::after {
+            content: '';
+            position: absolute;
+            top: -60%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .service-pag-hero::before {
+            content: '';
+            position: absolute;
+            bottom: -40%;
+            left: -15%;
+            width: 500px;
+            height: 500px;
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .service-pag-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .service-pag-hero h1 {
+            font-size: clamp(2.6rem, 7vw, 4.8rem);
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.1;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .service-pag-hero p {
+            font-size: clamp(1rem, 1.4vw, 1.25rem);
+            color: rgba(255, 255, 255, 0.92);
+            max-width: 720px;
+            margin: 0 auto 0;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+
+        /* ── stats section ── */
+        .service-pag-stats-section {
+            background: #ffffff;
+            padding: 30px 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0,.5);
+            margin: -24px auto 0;
+            position: relative;
+            z-index: 4;
+            border-radius: 20px;
+            max-width: 900px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 30px 60px;
+        }
+
+        .service-pag-stat {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #1e293b;
+            flex-direction: column;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        .service-pag-stat .service-pag-num {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #b0000a;
+            line-height: 1.2;
+        }
+
+        .service-pag-stat i {
+            font-size: 1.4rem;
+            color: #b0000a;
+            opacity: 0.6;
+        }
+
+        /* ── container ── */
+        .service-pag-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ── section title ── */
+        .service-pag-section-title {
+            text-align: center;
+            margin-bottom: 48px;
+            margin-top: 50px;
+        }
+
+        .service-pag-section-title h2 {
+            font-size: 2.6rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+            color: #0f172a;
+        }
+
+        .service-pag-section-title h2 span {
+            background: linear-gradient(135deg, #900009, #f0010f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .service-pag-section-title p {
+            color: #64748b;
+            max-width: 640px;
+            margin: 12px auto 0;
+            font-size: 1.05rem;
+        }
+
+        /* ── cards grid ── */
+        .service-pag-grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .service-pag-card {
+            background: linear-gradient(135deg, #8a0008, #c00010);
+            border-radius: 24px;
+            padding: 32px 28px 28px;
+            box-shadow: 0 12px 30px rgba(180, 0, 10, 0.15);
+            transition: transform 0.25s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: #ffffff;
+        }
+
+        .service-pag-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px rgba(180, 0, 10, 0.25);
+        }
+
+        .service-pag-card .service-pag-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.12);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            color: #fff;
+            margin-bottom: 16px;
+        }
+
+        .service-pag-card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .service-pag-card h3 span {
+            background: linear-gradient(135deg, #ffd700, #ffb300);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .service-pag-card p {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 0.98rem;
+            line-height: 1.7;
+        }
+
+        .service-pag-card ul {
+            margin-top: 12px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-pag-card ul li {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.95rem;
+            padding: 4px 0 4px 24px;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .service-pag-card ul li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #ffd700;
+            font-weight: 700;
+        }
+
+        /* ── image rows ── */
+        .service-pag-image-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+            margin: 50px 0 20px;
+        }
+
+        .service-pag-image-row .service-pag-img-placeholder {
+            border-radius: 20px;
+            overflow: hidden;
+            background: #eef2f6;
+            aspect-ratio: 4 / 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(0, 0, 0, 0.04);
+        }
+
+        .service-pag-image-row .service-pag-img-placeholder:hover {
+            transform: scale(1.02);
+        }
+
+        .service-pag-image-row .service-pag-img-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* ── feature blocks (redesigned) ── */
+        .service-pag-feature-block {
+            background: #ffffff;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+            border: 1px solid #eef2f6;
+            margin: 40px 0 30px;
+        }
+
+        .service-pag-feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+
+        .service-pag-feature-content {
+            padding: 48px 40px;
+            display: flex;
+            background: linear-gradient(to right,#ffb300,#ffd200);
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .service-pag-feature-content h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: black;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .service-pag-feature-content p {
+            color: black;
+            font-size: 1rem;
+            line-height: 1.8;
+            max-width: 90%;
+        }
+
+        .service-pag-feature-content .service-pag-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .service-pag-feature-content .service-pag-tags span {
+            background: #f1f5f9;
+            padding: 6px 18px;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #1e293b;
+            letter-spacing: 0.3px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .service-pag-feature-image {
+            background: #f8fafc;
+            min-height: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .service-pag-feature-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* reverse layout for emergency */
+        .service-pag-feature-block.reverse .service-pag-feature-grid {
+            direction: rtl;
+        }
+        .service-pag-feature-block.reverse .service-pag-feature-grid > * {
+            direction: ltr;
+        }
+
+        /* ── closing note ── */
+        .service-pag-closing {
+            text-align: center;
+            padding: 40px 0 50px;
+            border-top: 1px solid #eef2f6;
+            margin-top: 20px;
+        }
+
+        .service-pag-closing p {
+            color: #475569;
+            font-size: 0.95rem;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        .service-pag-closing strong {
+            background: linear-gradient(135deg, #900009, #f0010f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+
+        /* ── responsive ── */
+        @media (max-width: 768px) {
+            .service-pag-hero {
+                padding: 150px 20px 50px;
+            }
+
+            .service-pag-stats-section {
+                flex-direction: column;
+                gap: 25px;
+                padding: 24px 20px;
+                max-width: 80%;
+            }
+            .service-pag-section-title h2{
+                font-size: 2rem;
+            }
+
+            .service-pag-grid-2 {
+                grid-template-columns: 1fr;
+            }
+
+            .service-pag-feature-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-pag-feature-content {
+                padding: 32px 24px;
+                text-align: center;
+            }
+            .service-pag-feature-content .service-pag-tags{
+                justify-content: center;
+                align-items: center;
+            }
+
+            .service-pag-feature-content p {
+                max-width: 100%;
+            }
+
+            .service-pag-feature-block.reverse .service-pag-feature-grid {
+                direction: ltr;
+            }
+
+            .service-pag-image-row {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .service-pag-image-row {
+                grid-template-columns: 1fr;
+            }
+
+            .service-pag-card {
+                padding: 24px 18px;
+            }
+
+            .service-pag-feature-content h3 {
+                font-size: 1.4rem;
+            }
+        }
+        .service-pag-content-text h2{
+            margin-bottom: 10px;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        .service-pag-content-text h2 span{
+             background: linear-gradient(135deg, #900009, #f0010f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+        .service-pag-content-text p,.service-pag-content-text li{
+            font-size: large;
+        }
+        .service-pag-content-text h3{
+            margin-bottom: 10px;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        .service-pag-content-text h3 span{
+             background: linear-gradient(135deg, #900009, #f0010f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+        .service-pag-content-text h4{
+            font-weight: 600;
+            font-size: x-large;
+        }

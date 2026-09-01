@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>Fire Alarm & Detection | Manal Fire Technology</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/service.css">
+</head>
+<body>
+
+    <!-- ============================================================
+    NAVBAR (unchanged)
+    ============================================================ -->
+    <nav class="navbar navbar-expand-lg fixed-top fire-navbar" id="mainNav">
+        <div class="container-fluid px-lg-5">
+            <a class="navbar-brand fire-logo" href="#">
+                <img src="images/logo-nav.png" alt="Manal Fire Technology" />
+            </a>
+            <div class="collapse navbar-collapse d-none d-lg-flex" id="fireNavbarDesktop">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Services</a>
+                        <ul class="dropdown-menu fire-dropdown">
+                            <li><a class="dropdown-item" href="#services">Fire Pumps</a></li>
+                            <li><a class="dropdown-item" href="#services">Fire Hydrant Systems</a></li>
+                            <li><a class="dropdown-item" href="#services">Gaseous Fire Suppression</a></li>
+                            <li><a class="dropdown-item" href="#services">Fire Sprinkler Systems</a></li>
+                            <li><a class="dropdown-item" href="#services">Fire Extinguisher</a></li>
+                            <li><a class="dropdown-item" href="#services">Security Surveillance</a></li>
+                            <li><a class="dropdown-item" href="#services">Fire Alarm &amp; Detection</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#clients">Clients</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                        <ul class="dropdown-menu fire-dropdown products-dropdown">
+                            <li><a class="dropdown-item" href="#products">Fire Hydrant</a></li>
+                            <li><a class="dropdown-item" href="#products">Fire Hose Reel</a></li>
+                            <li><a class="dropdown-item" href="#products">Fire Door</a></li>
+                            <li><a class="dropdown-item" href="#products">Fire Detection System</a></li>
+                            <li><a class="dropdown-item" href="#products">Exit Sign</a></li>
+                            <li><a class="dropdown-item" href="#products">Emergency Light</a></li>
+                            <li><a class="dropdown-item" href="#products">Fire Safety Signage</a></li>
+                            <li><a class="dropdown-item" href="#products">CCTV Camera Installation</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="nav-contact" href="#contact"><i class="fas fa-phone-alt"></i> Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger-icon" id="hamburgerIcon">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============================================================
+    OFF-CANVAS SIDE MENU
+    ============================================================ -->
+    <div class="offcanvas offcanvas-end offcanvas-fire" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavLabel">Menu</h5>
+            <button type="button" class="btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="#home" data-bs-dismiss="offcanvas">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Our Services <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu fire-dropdown">
+                        <li><a class="dropdown-item" href="#services" data-bs-dismiss="offcanvas">Fire Pumps</a></li>
+                        <li><a class="dropdown-item" href="#services" data-bs-dismiss="offcanvas">Fire Hydrant Systems</a></li>
+                        <li><a class="dropdown-item" href="#services" data-bs-dismiss="offcanvas">Gaseous Fire Suppression</a></li>
+                        <li><a class="dropdown-item" href="#services" data-bs-dismiss="offcanvas">Fire Sprinkler Systems</a></li>
+                        <li><a class="dropdown-item" href="#services" data-bs-dismiss="offcanvas">Fire Extinguisher</a></li>
+                        <li><a class="dropdown-item" href="#services" data-bs-dismiss="offcanvas">Security Surveillance</a></li>
+                        <li><a class="dropdown-item" href="#services" data-bs-dismiss="offcanvas">Fire Alarm &amp; Detection</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#clients" data-bs-dismiss="offcanvas">Clients</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Products <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu fire-dropdown products-dropdown">
+                        <li><a class="dropdown-item" href="#products" data-bs-dismiss="offcanvas">Fire Hydrant</a></li>
+                        <li><a class="dropdown-item" href="#products" data-bs-dismiss="offcanvas">Fire Hose Reel</a></li>
+                        <li><a class="dropdown-item" href="#products" data-bs-dismiss="offcanvas">Fire Door</a></li>
+                        <li><a class="dropdown-item" href="#products" data-bs-dismiss="offcanvas">Fire Detection System</a></li>
+                        <li><a class="dropdown-item" href="#products" data-bs-dismiss="offcanvas">Exit Sign</a></li>
+                        <li><a class="dropdown-item" href="#products" data-bs-dismiss="offcanvas">Emergency Light</a></li>
+                        <li><a class="dropdown-item" href="#products" data-bs-dismiss="offcanvas">Fire Safety Signage</a></li>
+                        <li><a class="dropdown-item" href="#products" data-bs-dismiss="offcanvas">CCTV Camera Installation</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#about" data-bs-dismiss="offcanvas">About Us</a></li>
+                <a class="nav-contact-mobile" href="#contact" data-bs-dismiss="offcanvas">
+                    <i class="fas fa-phone-alt"></i> Contact Us
+                </a>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    WHATSAPP FLOATING BUTTON
+    ============================================================ -->
+    <a href="https://wa.me/923272386765" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+
+    <!-- ============================================================
+    HERO – Fire Alarm & Detection Systems
+    ============================================================ -->
+    <section id="service-pag-hero" class="service-pag-hero">
+        <div class="service-pag-hero-content">
+            <h1>Fire Alarm <br /><span>&amp; Detection</span></h1>
+            <p>
+                A fire alarm system has different components working together to detect and warn people through smoke, 
+                fire, carbon monoxide or other emergencies. Automatic and manual activation ensures early warning and safety.
+            </p>
+        </div>
+    </section>
+
+    <!-- STATS BAR (unchanged) -->
+    <div class="service-pag-stats-section">
+        <div class="service-pag-stat">
+            <span class="service-pag-num">20+</span> Years Expertise
+        </div>
+        <div class="service-pag-stat">
+            <span class="service-pag-num">100%</span> NFPA Compliance
+        </div>
+        <div class="service-pag-stat">
+            <span class="service-pag-num">24/7</span> Emergency Support
+        </div>
+    </div>
+
+    <!-- ============================================================
+    MAIN CONTENT – Fire Alarm & Detection Systems
+    ============================================================ -->
+    <main class="service-pag-container" style="margin-top: 30px;">
+
+        <!-- image row 1 (unchanged) -->
+        <div class="service-pag-image-row">
+            <div class="service-pag-img-placeholder">
+                <img src="images/Fire-Alarm.png" alt="Fire Alarm Control Panel" />
+            </div>
+            <div class="service-pag-img-placeholder">
+                <img src="images/Fire-Protection-Systems.png" alt="Smoke Detectors" />
+            </div>
+            <div class="service-pag-img-placeholder">
+                <img src="images/fire-safety.png" alt="Fire Alarm Devices" />
+            </div>
+        </div>
+
+        <!-- Text content from the file -->
+        <div class="service-pag-content-text">
+            <h2><span>Fire Alarm</span> System</h2>
+            <p>
+                A fire alarm system has different components working together to detect and warn people through smoke, fire, 
+                carbon monoxide or other emergencies are present. These alarms may be activated automatically or manually. 
+                If smoke detectors, fire detectors, and heat detectors are installed then they sense the fire smoke and heat 
+                and gives a signal to hooter and it automatically creates a sound or may also be activated via manual fire 
+                alarm activation devices such as manual pull stations.
+            </p>
+            <p>
+                It is very important for the safety of home. In case of fire, the fire alarm system supports and keeps you 
+                aware before the fire spread all over the place.
+            </p>
+
+            <h3><span>Fire Alarm</span> &amp; Detection Systems</h3>
+            <p>
+                <strong>Fire Alarm Control Panels</strong><br />
+                <strong>Fire Alarm Devices</strong><br />
+                <strong>Smoke Detectors</strong><br />
+                <strong>Thermal Detectors</strong><br />
+                <strong>Flame Detector</strong><br />
+                <strong>Fire &amp; Gas Detector</strong>
+            </p>
+
+            <h3><span>Fire Alarm</span> Control Panels</h3>
+            <h4>Conventional</h4>
+            <p>
+                Traditional fire alarm panels installed prior to 1998 were conventional zone panels. In a zoned system, 
+                fire alarm devices in a common area or floor of a facility are connected to the same alarm initiating circuit. 
+                Each zone requires its own circuit conductor. This arrangement allows alarm annunciation to be reported by 
+                areas of the building to identify which device is in alarm. Conventional panels are often used in small 
+                facilities where a few zones can provide sufficient alarm annunciation.
+            </p>
+            <h4>Addressable</h4>
+            <p>
+                With the advent of microprocessors and digital electronics, addressable fire alarm control panels, and 
+                devices have become more common than conventional systems for medium and large-sized facilities. They have 
+                become more cost-effective in some small applications as well.
+            </p>
+            <p>
+                Addressable fire alarm systems use digital encoding and multiplex technology to more accurately identify 
+                alarm locations and device conditions. Each fire alarm device in a system is programmed with a unique address. 
+                The fire alarm control panel is capable of communicating with a single address or a group of addresses 
+                depending on the functions required. The communication is often multiplexed over a common cable, sometimes 
+                referred to as the signaling line circuit (SLC).
+            </p>
+            <p>
+                This arrangement significantly reduces the amount of cabling necessary to install the system. The 
+                communication channel allows two-way communication, thus enabling the fire alarm control panel to control 
+                as well as monitor fire alarm devices.
+            </p>
+            <p>
+                A significant component of an addressable fire alarm system is the software programming necessary to make 
+                the system function correctly. The programming allows for flexible applications where you want to have 
+                specific control over the inputs and outputs.
+            </p>
+            <p>
+                The communication technologies employed in addressable systems allow for advanced features to accommodate 
+                sensitivity changes due to age and accumulation of dust prior to maintenance. These features are not 
+                available with the standard conventional system.
+            </p>
+
+            <h3><span>Fire Alarm</span> Devices – Automatic Detection</h3>
+            <p>
+                Components of fire consist of:
+            </p>
+            <ul>
+                <li>Smoke (particulate and aerosol)</li>
+                <li>Heat</li>
+                <li>Light Radiation</li>
+            </ul>
+            <p>
+                Fire detection devices are built to detect one or a combination of these components. While all components 
+                are necessary for a fire to exist, all components may not exist at a detectable threshold. Detectors will 
+                be selected that will detect the elements that may exist in a fire for the ambient conditions that are present. 
+                It also should be realized the similar non-fire components might exist in the same ambient conditions, which 
+                could cause unfavorable false alarm conditions.
+            </p>
+            <p>
+                Devices used for fire detection include smoke detectors, thermal detectors, flame detectors, fire-gas 
+                detectors, and other devices.
+            </p>
+            <ul>
+                <li><strong>Smoke detectors</strong> sense visible or invisible particles of combustion generated by burning, 
+                smoldering or the incipient stage of combustion. These devices fall into two categories — photoelectric and 
+                ionization.</li>
+                <li><strong>Thermal detectors</strong> sense the high temperature or the temperature rise caused by a fire.</li>
+                <li><strong>Flame detectors</strong> sense the radiation produced by a fire.</li>
+                <li><strong>Fire-gas detectors</strong> sense the gases produced by a fire.</li>
+                <li><strong>Other detectors</strong> sense some phenomenon other than smoke, thermal, flame, or fire-gas 
+                to detect a fire.</li>
+            </ul>
+
+            <h3><span>Smoke Detectors</span> – Ionization, Photoelectric, Combination</h3>
+            <h4>Ionization</h4>
+            <p>
+                The ionization smoke detector is widely used. Its capability to detect smoke originating from fire is best 
+                utilized for clean-burning fires that produce small particles during combustion.
+            </p>
+            <p>
+                The ionization smoke detector consists of an alpha particle producing a radioactive source, a smoke chamber, 
+                and charged detector plates.
+            </p>
+            <ul>
+                <li>The alpha source causes the air within the smoke chamber to become ionized and conductive.</li>
+                <li>As smoke particles enter the smoke chamber, the smoke particles attach themselves to the ionized air 
+                molecules and the air in the chamber becomes less conductive.</li>
+                <li>When the air conductivity within the chamber drops below a predetermined level, the alarm is triggered.</li>
+            </ul>
+            <p><strong>Advantages of Ionization Smoke Detectors:</strong></p>
+            <ul>
+                <li>Detects invisible products of combustion — It can detect fires that are in the incipient stage or detect 
+                other aerosol-type smoke products.</li>
+                <li>Quick-acting — Provides for earlier detection than other types of smoke detectors or thermal detectors.</li>
+            </ul>
+            <!-- The text ends with a dot, we include it -->
+            <p>Disadvantages of Ionization Smoke Detectors: (further details not provided in the source text).</p>
+        </div>
+
+        <!-- image row 2 (unchanged) -->
+        <div class="service-pag-image-row" style="margin-top: 40px;">
+            <div class="service-pag-img-placeholder">
+                <img src="images/Fire-Alarm.png" alt="Addressable Systems" />
+            </div>
+            <div class="service-pag-img-placeholder">
+                <img src="images/Fire-Protection-Systems.png" alt="Conventional Panels" />
+            </div>
+            <div class="service-pag-img-placeholder">
+                <img src="images/fire-safety.png" alt="Detection Devices" />
+            </div>
+        </div>
+
+        <!-- closing note -->
+        <div style="padding: 30px 0 50px; border-top: 1px solid #eef2f6; margin-top: 20px; text-align: center;">
+            <p style="color: #475569; font-size: 0.95rem; max-width: 640px; margin: 0 auto;">
+                <strong>Manal Fire Technology</strong> – your trusted partner for reliable fire alarm and detection systems, 
+                ensuring early warning and safety for your property and people.
+            </p>
+        </div>
+
+    </main>
+
+    <!-- ============================================================
+    FOOTER (unchanged)
+    ============================================================ -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="footer-logo">
+                        <img src="images/logo-nav.png" alt="Manal Fire Technology" />
+                    </div>
+                    <p style="font-size:0.92rem;line-height:1.8;max-width:340px;">
+                        A Single Comprehensive Fire Fighting Solution with well-integrated Safety &amp; Security System in Place.
+                    </p>
+                    <div class="footer-contact">
+                        <p style="margin-bottom:6px;"><i class="fas fa-map-marker-alt"></i> Office no-05, RJ Mall, Gulshan-e-Iqbal Karachi</p>
+                        <p style="margin-bottom:6px;"><i class="fas fa-phone-alt"></i> 0327-2386765</p>
+                        <p style="margin-bottom:6px;"><i class="fas fa-envelope"></i> info@fireprosafetysolutions.com</p>
+                        <p style="margin-bottom:0;"><i class="fas fa-globe"></i> www.fireprosafetysolutions.com</p>
+                    </div>
+                    <div style="display:flex;gap:12px;margin-top:16px;justify-content:center;">
+                        <a href="#" style="color:rgba(255,255,255,0.5);font-size:1.2rem;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" style="color:rgba(255,255,255,0.5);font-size:1.2rem;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color:rgba(255,255,255,0.5);font-size:1.2rem;"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" style="color:rgba(255,255,255,0.5);font-size:1.2rem;"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Services</h5>
+                    <a href="#services">Fire Pumps</a><br />
+                    <a href="#services">Fire Hydrant Systems</a><br />
+                    <a href="#services">Fire Suppression</a><br />
+                    <a href="#services">Sprinkler Systems</a><br />
+                    <a href="#services">Fire Extinguisher</a>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Products</h5>
+                    <a href="#products">Fire Hydrant</a><br />
+                    <a href="#products">Fire Hose Reel</a><br />
+                    <a href="#products">Fire Door</a><br />
+                    <a href="#products">Detection System</a><br />
+                    <a href="#products">Exit Sign</a>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5>Send a Message</h5>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required />
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required />
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Manal Fire Technology. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    BACK TO TOP
+    ============================================================ -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ============================================================
+    SCRIPTS (unchanged)
+    ============================================================ -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $(window).trigger('scroll');
+
+            // BACK TO TOP
+            var backBtn = $('#backToTop');
+            $(window).on('scroll', function() {
+                if ($(window).scrollTop() > 400) {
+                    backBtn.addClass('show');
+                } else {
+                    backBtn.removeClass('show');
+                }
+            });
+            backBtn.on('click', function() {
+                $('html, body').animate({ scrollTop: 0 }, 500);
+            });
+
+            // NAVBAR SCROLL
+            var navbar = $('#mainNav');
+            $(window).on('scroll', function() {
+                if ($(window).scrollTop() > 80) {
+                    navbar.addClass('scrolled');
+                } else {
+                    navbar.removeClass('scrolled');
+                }
+            });
+
+            // SMOOTH NAV LINKS
+            $('a[href^="#"]').on('click', function(e) {
+                var target = $(this.getAttribute('href'));
+                if (target.length) {
+                    e.preventDefault();
+                    var navHeight = $('.fire-navbar').outerHeight() || 80;
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - navHeight - 10
+                    }, 600);
+                }
+            });
+
+            // OFF-CANVAS: sync hamburger icon
+            var offcanvasEl = document.getElementById('offcanvasNav');
+            var hamburgerIcon = document.getElementById('hamburgerIcon');
+
+            offcanvasEl.addEventListener('show.bs.offcanvas', function() {
+                hamburgerIcon.classList.add('open');
+            });
+            offcanvasEl.addEventListener('hide.bs.offcanvas', function() {
+                hamburgerIcon.classList.remove('open');
+            });
+
+            // OFF-CANVAS: close dropdowns when a dropdown item is clicked
+            $('.offcanvas-fire .dropdown-item').on('click', function() {
+                var offcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+                if (offcanvas) {
+                    offcanvas.hide();
+                }
+            });
+
+        });
+    </script>
+
+</body>
+</html>
